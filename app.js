@@ -52,6 +52,9 @@ Exercise 5
 
 Solve Exercise 5 here:
 */
+
+
+
 const selectedPokemons = pokemon.filter(pokemon =>pokemon.type==="Filter").slice(0,3);
 selectedPokemons.forEach(pokemon =>game.party.push(pockemon));
 console.log(game);
@@ -90,17 +93,23 @@ Solve Exercise 7 here:
 */
 
 const starter = game.party[0];
-let evolvedPokemon;
+letevolvedPokemon;
+
 if (starter.id === 1) {
+
   evolvedPokemon = game.pokemon[1];
+
 } else if (starter.id === 4) {
       evolvedPokemon = game.pokemon[4];
+ evolvedPokemon = 5;
 } else if (starter.id === 7) {
     evolvedPokemon = game.pokemon[7];
 } else if (starter.id === 25) {
     evolvedPokemon = game.pokemon[25];
 }
+const evolvedPokemon = pokemon.find(p => p.id === evolvedId);
 game.party.splice(0, 1, evolvedPokemon);
+
 
 /*
 Exercise 8
